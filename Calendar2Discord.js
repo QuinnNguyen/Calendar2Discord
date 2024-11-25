@@ -56,7 +56,7 @@ function fetchEvent(days) {
       //let location = event.getLocation()
       let endDate = Utilities.formatDate(
         event.getEndTime(),
-        "GMT-4",
+        "America/Toronto",
         "MM/dd/yy hh:mm a"
       );
       let embed = {
