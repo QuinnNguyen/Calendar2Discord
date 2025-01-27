@@ -99,8 +99,8 @@ function send2Discord() {
     events = fetchEvent(7);
     postDiscord(events, 7);
   } else {
-    for (i = 3; i <= 20; i++) {
-      //loop the code from 3 to 20 days to check if there are events. If there are events then send
+    for (i = 0; i <= 14; i++) {
+      //loop the code from 0 to 14 days to check if there are events. If there are events then send
       let events = fetchEvent(i);
       if (events && events.length > 0) {
         postDiscord(events, i);
